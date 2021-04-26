@@ -30,7 +30,7 @@ REST_FRAMEWORK = {
 SECRET_KEY = "t)w&okcd^t#z6%hw_rsz-gr=mzw#h3ufe1*gm3ghq7wjoo^c$l"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
