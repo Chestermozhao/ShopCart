@@ -29,10 +29,10 @@
 ### Visit Home page
 - http://127.0.0.1:8000/index/
 
-### Deploy Applications:
-```
-$ cd docker
-$ sudo docker-compose up --build -d
+### Build with Docker
+```bash
+docker build -t shop-cart:latest .
+docker run -it -p 8000:8000 --rm shop-cart:latest
 ```
 
 ### Visit interactive back-platform to test api
@@ -44,6 +44,7 @@ python manage.py runserver
 
 ### Cronjob (Celery beat)
 ```bash
-celery beat -A Urmart.tasks -l info
-celery worker -A Urmart.tasks -l info
+celery beat -A backend.tasks -l info
+celery worker -A backend.tasks -l info
 ```
+- exporter as csv file in local
