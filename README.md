@@ -37,6 +37,8 @@ docker run -it -p 8000:8000 --rm shop-cart:latest
 
 ### Visit interactive back-platform to test api
 ```bash
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 ```
 - visit: http://localhost:8000/
